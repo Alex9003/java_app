@@ -10,17 +10,20 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplication">
+        android:theme="@style/Theme.MobileApp">
 
         <activity
-            android:name="com.example.myapplication.MainMobileEntry"
-            android:exported="true">
+            android:exported="true"
+            android:name="com.example.mobileapp.MainMobileApp">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
         </activity>
 
+        <activity android:name=".FastColorActivity"/>
+
     </application>
+
 </manifest>
